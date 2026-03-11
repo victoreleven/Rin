@@ -35,6 +35,7 @@
     "release": "bun cli/bin/rin.ts release"
   },
   "devDependencies": {
+    "@types/minimatch": "^6.0.0",
     "turbo": "^1.13.3",
     "wrangler": "4.71.0"
   }
