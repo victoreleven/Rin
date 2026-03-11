@@ -10,7 +10,7 @@ binding = "ASSETS"
 [[d1_databases]]
 binding = "DB"
 database_name = "rin-db"
-database_id = "your-d1-database-id"
+database_id = "745b92f3-aba5-46e3-aaa9-aa2c4322a1dd"
 
 # Environment variables
 [vars]
