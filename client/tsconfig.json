@@ -3,16 +3,15 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],   // 修改这里
     "noEmit": true,
     "jsx": "react-jsx",
-
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
+  "exclude": ["**/*.test.ts", "**/*.spec.ts", "src/**/__tests__"],  // 新增：排除测试文件
   "references": [{ "path": "./tsconfig.node.json" }]
 }
