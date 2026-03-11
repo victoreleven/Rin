@@ -9,7 +9,7 @@ test.ts
 *.log
 .env.production
 .wrangler
-wrangler.toml
+server/wrangler.toml
 .vite
 # Logs
 logs
