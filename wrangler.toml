@@ -1,3 +1,7 @@
 name = "rin"
 main = "server/src/_worker.ts"
 compatibility_date = "2026-03-11"
+
+[assets]
+directory = "dist/client"
+binding = "ASSETS"
