@@ -134,8 +134,9 @@ class S3StorageProvider implements StorageProvider {
     private cacheUrl: string;
 
     constructor(private env: Env, private cacheMap: Map<string, any>, private type: string) {
-        const slash = this.env.S3_ACCESS_HOST.endsWith('/') ? '' : '/';
-        this.cacheUrl = this.env.S3_ACCESS_HOST + slash + path_join(this.env.S3_CACHE_FOLDER || 'cache', `${type}.json`);
+        const host = this.env.S3_ACCESS_HOST || '';
+        const slash = host.endsWith('/') ? '' : '/';
+        this.cacheUrl = host + slash + path_join(this.env.S3_CACHE_FOLDER || 'cache', `${type}.json`);
     }
 
     private async getS3() {

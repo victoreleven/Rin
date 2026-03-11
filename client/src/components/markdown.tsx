@@ -43,7 +43,7 @@ const isMarkdownImageLinkAtEnd = (text: string) => {
   if (match) {
     const [, beforeImage, _] = match;
 
-    return beforeImage.trim().length === 0 || beforeImage.endsWith("\n");
+    return !beforeImage || beforeImage.trim().length === 0 || beforeImage.endsWith("\n");
   }
 
   return false;
