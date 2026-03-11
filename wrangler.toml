@@ -15,3 +15,4 @@ database_id = "745b92f3-aba5-46e3-aaa9-aa2c4322a1dd"
 # Environment variables
 [vars]
 JWT_SECRET = "change-this-to-a-random-secret-key"
+CACHE_STORAGE_MODE = "database"
